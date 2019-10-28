@@ -1,0 +1,42 @@
+@charset "utf-8";
+table{
+
+width="100%" border="1px solid"
+}
+@media all and (max-width:700px) {
+    
+table,thead,tbody,th,td,tr,caption{
+        display: block;
+    }
+thread tr {
+        display: none;
+    }
+ #mainContent table tr:nth-of-type(even){
+       background-color:rgba(102,51,121,.25); 
+    }
+ td{
+        border:1px solid;
+        position:relative;
+        text-align: center;
+    }
+td:before{
+        position:absolute;
+        top: 6px;
+        left:6px;
+        width:45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+td:nth-of-type(1):before{
+        content: "Food Name:";
+    }
+td:nth-of-type(2):before{
+        content: "Description:";
+}
+
+td:nth-of-type(3):before{
+        content: "price:";
+    }
+}
